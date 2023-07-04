@@ -1,0 +1,297 @@
+*{
+
+  margin: auto; 
+  padding: auto; 
+   }
+
+
+   
+ 
+
+  .FirearmLink { 
+
+    align-items: center; 
+    justify-content: space-between; 
+  } 
+
+  .FirearmLink ul li {
+    top: 95%;
+    left: 50%;
+    font-size: 20px;
+    background: rgb(12,31,57);
+    background: linear-gradient(92deg, rgba(12, 31, 57, 0.623) 13%, rgba(127, 119, 46, 0.652) 76%);
+      transform: translate(-50%, -50%);
+     align-items: center;
+     position: absolute;
+    }
+    @media only screen and  (min-width: 900px) {
+      .FirearmLink {
+        top: 95.8%;
+        left: 50%;
+        background-color: #293122c0 ;
+    transform: translate(-50%, -50%);
+         align-items: center;
+         position: absolute;
+      }
+    }
+   
+    
+  .Jas {
+  position: absolute;
+  top: 72.5%;
+  left: 50%;
+  background: rgb(12,31,57);
+  background: linear-gradient(92deg, rgba(12, 31, 57, 0.556) 47%, rgba(127, 119, 46, 0.578) 86%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+  font-size: 20px; } 
+
+
+
+  a {
+    background: rgb(147,137,48);
+background: linear-gradient(92deg, rgba(147, 137, 48, 0.793) 64%, rgba(12, 31, 57, 0.779) 78%);
+    box-shadow: none;
+    color: white;
+    padding: 0.2em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  a:hover {
+    background: rgb(147,137,48);
+    background: linear-gradient(92deg, rgba(147,137,48,0.9990589985994398) 64%, rgba(12,31,57,1) 78%);
+    box-shadow: none;
+    top: 5px;
+  }
+  
+  /* Non-Demo Styles */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  .ClipInfo { 
+    position: absolute;
+  top: 5%;
+  left: 50%;
+  background: rgb(12,31,57);
+background: linear-gradient(92deg, rgba(12, 31, 57, 0.511) 68%, rgba(127, 119, 46, 0.506) 79%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+  font-size: 20px; }
+  ul {
+    list-style-type: none;
+}
+@media only screen and  (min-width: 559px) {
+  .NameTag { 
+    Top: -25%;
+    text-align: center;
+    font-family: fantasy;
+    position: relative;
+    font-size: 40px;
+    color: #ffa;
+  }
+}
+  @media only screen and  (min-width: 559px) {
+    .FirearmLink {
+      top: 49.8%;
+      left: 40%;
+      background-color: #293122c0 ;
+  transform: translate(-50%, -50%);
+       align-items: center;
+       position: absolute;
+    }
+    .FirearmLink { 
+
+      align-items: center; 
+      justify-content: space-between; 
+    } 
+  
+  
+    }
+    @media only screen and  (min-width: 559px) {
+    .Bubble {
+      position: absolute;
+      top: 49.5%;
+      left: 29.1%;
+      width: 14px; 
+      height: 14px; 
+      background: rgb(12,31,57);
+      background: linear-gradient(92deg, rgba(12, 31, 57, 0.834) 13%, rgba(127, 119, 46, 0.832) 76%);
+      border-radius: 50%; 
+    }
+  }
+  @media only screen and  (min-width: 559px) {
+    .video-container {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      top: 36%;
+      left: -29.0%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
+    }
+    
+    .video-container video {
+      position: relative;
+      top: 14%;
+      left: 50%;
+      width: 350px;
+      height: 250px;
+    }
+    
+
+  }
+  @media only screen and  (min-width: 559px) {
+    .Info {
+      position: absolute;
+      top: 12.9%;
+      left: 37%;
+      background: rgb(12,31,57);
+    background: linear-gradient(92deg, rgba(0, 0, 0, 0.301) 13%, rgba(127, 119, 46, 0.397) 76%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color:white;
+      font-size: 16px; }
+    
+    }
+
+    @media only screen and  (min-width: 559px) {
+      .Jas {
+        position: absolute;
+        top: 28.9%;
+        font-family: fantasy;
+        left: 37%;
+        color:white;
+        background: rgb(12,31,57);
+      background: linear-gradient(92deg, rgba(7, 11, 15, 0.582) 13%, rgba(127, 119, 46, 0.37) 76%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        font-size: 15px; }
+      
+      }
+          
+      @media only screen and  (min-width: 559px) {
+        .post-it {
+
+          width:400px;
+         height:322px;
+         top: 6.3%;
+         left: 28.5%;
+         position:relative;
+         background:rgba(255, 255, 170, 0.732);
+         overflow:hidden;
+         margin:30px auto;
+         padding:20px;
+         border-radius:0 0 0 30px/45px;
+         box-shadow:
+           inset 0 -40px 40px rgba(0,0,0,0.2),
+           inset 0 25px 10px rgba(0,0,0,0.2),
+           0 5px 6px 5px rgba(0,0,0,0.2);
+           
+         font-family: 'Permanent Marker', cursive;
+         line-height:1.5em;
+         font-size:10px;
+       
+         color:#130d6b;
+       }
+      }
+      @media only screen and  (min-width: 559px) {
+        .ClipInfo { 
+          position: absolute;
+        top: 59%;
+        left: 37%;
+        color: white;
+        font-family: fantasy;
+        background: rgb(12,31,57);
+      background: linear-gradient(92deg, rgba(12, 31, 57, 0.511) 68%, rgba(127, 119, 46, 0.506) 79%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        font-size: 14px; }
+        }      
+.BackGround 
+{
+  margin: auto;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(hawt.gif);
+  width: 1920px;
+  height: 1080px; 
+  background-size: cover;
+  background-position: center; }
+
+@media only screen and  (min-width: 900px)
+{ .BackGround
+  {
+    width: 100%;
+    height: 2115px;
+    background-size: 100% 100%;
+    background-position: center; } }
+
+        
+    @import "compass/css3";
+
+    @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+    
+    * {
+      box-sizing:border-box;
+    }
+    
+    body {
+       background:#444; 
+    }
+    
+    
+    .post-it pre {
+       cursor:pointer; 
+    }
+    
+    .post-it:before {
+       content:"";
+      display:block;
+      position:absolute;
+      width:20px;
+      height:25px;
+      background:#ffa;
+      box-shadow:
+        3px -2px 10px rgba(0,0,0,0.2),
+        inset 15px -15px 15px rgba(0,0,0,0.3);
+      left:0;
+      bottom:0;
+      
+      transform:skewX(25deg);
+    }
+    
+    .post-it:after {
+       content:"";
+      display:block;
+      position:absolute;
+      width:75%;
+      height:20px; 
+      border-top:3px solid #130d6b;
+      border-radius: 50% ;
+      bottom:0px;
+      left:10%;
+    }
+    
+    .done {
+       text-decoration:line-through; 
+    }
+    
+    pre {
+       font-size:9.5px; 
+      position:relative;
+      left: -17%;
+    }
+    h1 {
+      font-size:20px; 
+      font-family: cursive;
+      position:relative;
+      left: 35%;
+    }
