@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+     
+        <title> My sickass projects !</title>
+        <link rel="stylesheet" href="/CSS/gt3.css">
+
+    </head>
+<body>
+
+
+	 
+<style>
+  .FirearmLink {
+    filter: brightness(70%); 
+
+  }
+</style>
+  <div class = "FirearmLink" >  
+  <ul>
+    <style>
+      .a { 
+        filter: brightness(50%); 
+      }
+    </style>
+    <li><a href="https://docs.opencv.org/3.4/dc/d88/tutorial_traincascade.html">FirearmAI</a></li>
+  </ul>
+  </div>
+
+<div class = "BackGround"> 
+  
+
+<style>
+  .Info { 
+    filter: brightness(180%); 
+  }
+</style>
+
+<div class = "Info"> <p>After witnessing the devastating Uvalde shooting shortly after my high school graduation in May, I was deeply distressed. It was heartbreaking to see young lives filled with potential abruptly cut short. Motivated by the desire to make a difference, I dedicated my entire summer to seeking ways to prevent such tragedies. Eventually, I came up with an idea that could potentially save lives.
+
+  My solution involves creating a camera that utilizes OpenCV, a computer vision library, to detect firearms. When the camera detects an individual carrying a gun, it will immediately trigger an alarm and simultaneously contact local law enforcement. This system aims to provide students with valuable extra time to seek cover and increase their chances of survival.
+  
+  To develop this innovative technology, I undertook the task of training an AI model using over 60,000 images. Using a toy gun, I constructed my own Image Classifier, which served as a starting point. However, for the model to be more accurate and reliable, it is crucial to train it with real firearms data. This is where I require the support and collaboration of the community.
+  
+  The process of creating AI Cascade models involves training a computer model with a vast dataset of images to teach it how to identify specific objects or features within those images. This intricate process entails breaking down the detection problem into smaller, simpler components and creating classifiers for each part. Ultimately, these classifiers are combined into a cascade to effectively detect the desired object—in this case, firearms. Developing an accurate and dependable model demands a substantial investment of time, effort, and resources. </p>p></div> 
+
+
+
+<style>
+  .Bubble {
+    filter: brightness(150%); 
+
+  }
+</style>
+
+
+<div class = "Bubble">  
+</div>
+  
+<div class="video-container">
+  <video controls>
+    <source src="/WebBuild/AiModelClip.mp4" type="video/mp4">
+    <source src="/WebBuild/AiModelClip.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+  <style>
+    .ClipInfo {
+      filter: brightness(150%); 
+    }
+  </style>
+  <div class = "ClipInfo" <p> In 2001, a groundbreaking approach in Machine Learning was founded called "Rapid Object Detection using a Boosted Cascade of Simple Features" discovered by Paul Viola and Michael Jones. The goal was to detect objects with the help of machine learning, it was successful. Their work introduced the Viola-Jones algorithm, which revolutionized the field of object detection and had a significant impact on computer vision and machine learning. This approach paved the way for advancements in object recognition tasks. Now, let me explain this in a way that doesn't require technical engineering knowledge.
+
+    Imagine you want to teach a computer how to detect a person holding a firearm in live video stream. This approach is a type of machine learning that helps the computer recognize these firearms accurately. To train the computer, we need lots of pictures with many types of firearms (positive images) and pictures without weapons (negative images).
+    
+    The first step is to create a special function, known as a cascade, which the computer will learn from the training images. This function will help the computer identify firearms in other live video streams.
+    
+    To make the cascade function effective, we need to extract certain characteristics or features from the training images. These features are called Haar features, which are similar to filters or patterns used in image processing. Each Haar feature represents a particular aspect of a Gun.
+    
+    Here's how the Haar features work: Imagine a rectangular shape, split into two smaller rectangles—one white and one black. We calculate a single value for each feature by subtracting the sum of the pixels inside the white rectangle from the sum of the pixels inside the black rectangle. These values help the computer understand the distinguishing characteristics of a firearm.
+    
+    By training the cascade function with positive and negative images, and using the Haar features to analyze the images, the computer can then detect many types of firearms in during a live video stream with a good level of accuracy. </p> </div>
+    
+    <div class = "NameTag" <p> My Project Portfolio </p>
+    </div>
+    <style>
+      .Jas {
+        filter: brightness(150%); 
+      }
+    </style>
+    <div class = "Jas" <p> On May 24, 2022, 18-year old Salvador Ramos freely entered onto Robb Elementary School to fatally shoot nineteen students and two teachers. The victims were closing in on their last few weeks of school, until Ramos’s AR-15 rifle devastatingly murdered and injured dozens of innocent children. On May 26, just two days later, I sat at my graduation ceremony among 600 other high school graduates. While we were finally finishing our secondary education, the victims of the Uvlade, Texas shooting had barely began theirs. It was heartbreaking to believe that those students, less than eight years later, would’ve been in the same cap and gown I was wearing. Unfortunately, this is the reality for the children of the American Education System.  I was hit with the hard realization that America had a mass shooting epidemic that was not only affecting the general public, but our country’s future generation.
+
+      I dedicated the following Summer to finding a solution to this problem. With my passion for coding and technology, I decided on creating a camera with an AI to detect firearms. I began the project by creating my own camera from scratch. I designed and 3D printed the camera shell for my ESP-32 modular and soldered an external rechargeable battery pack. Then, I programmed the camera to capture live video feed. I would use this to script a Python program to combine my AI cascade to detect when an individual is carrying a gun. I trained my AI model with over 60,000 images of replica fire arms and constructed my own image Classifier with a toy gun. As my project continues, the camera will be able to trigger an alarm upon detection of a firm to contact local law enforcement, </p> </div>
+      
+      <div class='post-it' contenteditable>
+        <h1> Python Script</h1>
+        <ul>
+         
+          <pre>
+ import cv2
+ import urllib.request            
+ import numpy as np
+            
+                                                /* Haar Cascade file */ 
+ firearm_cascade = cv2.CascadeClassifier("/Users/zximy/Desktop/cascade.xml")
+
+ url='http://192.168.0.108/640x480.jpg'
+
+ cv2.namedWindow("SCANNING AREA", cv2.WINDOW_AUTOSIZE)
+            
+ while True:
+            
+ videoResponse = urllib.request.urlopen(url)
+ imgnp = np.array(bytearray(videoResponse.read()), dtype=np.uint8)
+            
+ videostream = cv2.imdecode(imgnp, -1)
+ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)            
+ gundetected=firearm_cascade.detectMultiScale(gray,scaleFactor=12,minNeighbors=26)
+           
+ for x, y, w, h in gundetected:            
+ videostream = cv2.rectangle(videostream, (x, y), (x+w, y+h), (0, 0, 255), 3)           
+ cv2.imshow("Scanning", videostream)
+            
+ Key  = cv2.waitKey(5)            
+ if key == ord('q'):            
+ break</pre>
+          
+        </ul>
+            
+      </div>
+      <div class="wrapper">
+        <div class="candles">
+          <div class="light__wave"></div>
+          <div class="candle1">
+            <div class="candle1__body">
+              <div class="candle1__eyes">
+                <span class="candle1__eyes-one"></span>
+                <span class="candle1__eyes-two"></span>
+              </div>
+              <div class="candle1__mouth"></div>
+            </div>
+            <div class="candle1__stick"></div>
+          </div>
+          
+          <div class="candle2">
+            <div class="candle2__body">
+              <div class="candle2__eyes">
+                <div class="candle2__eyes-one"></div>
+                <div class="candle2__eyes-two"></div>
+              </div>
+            </div>
+            <div class="candle2__stick"></div>
+          </div>
+          <div class="candle2__fire"></div>
+          <div class="sparkles-one"></div>
+          <div class="sparkles-two"></div>
+          <div class="candle__smoke-one">
+      
+          </div>
+          <div class="candle__smoke-two">
+      
+          </div>
+          
+        </div>
+        <div class="floor">
+        </div>
+        
+      
+      </div>
+    
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    </body>
+</html>
